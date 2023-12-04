@@ -55,10 +55,13 @@
     "webpack-dev-server": "^4.13.2"
   },
   "dependencies": {
+    "@rematch/core": "^2.2.0",
     "core-js": "^3.32.0",
     "lodash": "^4.17.21",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.0",
+    "react-router-dom": "^6.20.1"
   },
   "engines": {
     "node": ">= 14.15.0"

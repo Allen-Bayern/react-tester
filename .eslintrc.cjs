@@ -55,5 +55,12 @@ module.exports = {
                 allowBind: true,
             },
         ],
+        'react/function-component-definition': [
+            2,
+            {
+                namedComponents: ['function-declaration', 'arrow-function'],
+                unnamedComponents: ['function-declaration', 'arrow-function'],
+            },
+        ],
     },
 };
