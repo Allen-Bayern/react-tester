@@ -1,14 +1,19 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import { getUnixTime } from 'date-fns';
 
-interface CountDownProps {
-    readonly deadlineTime: number;
-}
+import { useIsFirstRender } from '@/hooks';
 
-const { useState, useEffect } = React;
+interface CountDownProps {
+    deadlineTime: number;
+}
 
 const CountDown: React.FC<CountDownProps> = props => {
     const { deadlineTime } = props;
+
+    const isFirstRender = useIsFirstRender();
+    useEffect(() => {
+        console.log('isFirstRender\n', isFirstRender);
+    }, [isFirstRender]);
 
     const [restTime, setRestTime] = useState(deadlineTime - getUnixTime(Date.now()));
 

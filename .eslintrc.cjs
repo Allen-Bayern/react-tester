@@ -58,9 +58,10 @@ module.exports = {
         'react/function-component-definition': [
             2,
             {
-                namedComponents: ['function-declaration', 'arrow-function'],
-                unnamedComponents: ['function-declaration', 'arrow-function'],
+                namedComponents: 'arrow-function',
+                unnamedComponents: 'arrow-function',
             },
         ],
+        'react/prop-types': 'off',
     },
 };
