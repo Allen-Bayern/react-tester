@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 
 export function useIsFirstRender() {
-    const isFirstRenderRef = useRef(true);
+    const isFirstRenderRef = useRef<boolean>(true);
 
     useEffect(() => {
         isFirstRenderRef.current = false;
